@@ -1,3 +1,14 @@
+@font-face {
+    font-family: headerFont;
+    src: url('fonts/blowbrush.ttf');
+}
+
+body{
+    background-color: #747eb5;
+    background-image: url('images/miigii_podcast_logo.png');
+    background-size: 100px 100px;
+}
+
 body, html{
     height: 100%;
     margin: 0;
@@ -10,6 +21,40 @@ footer, header{
     align-items: center;
 }
 
+header{
+    background: #ffd556;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: headerFont;
+    padding: 25px 0;
+}
+
+.arrow{
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent; 
+    margin: 15px;
+}
+
+.arrowLeft {
+    border-right:30px solid #ffd556; 
+}
+
+.arrowRight {
+    border-left: 30px solid #ffd556;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 15px;
+    background: #ffd556;
+}
+
 .content{
     height: 100%;
     display: flex;
@@ -20,7 +65,9 @@ footer, header{
 .cover{
     width: 300px;
     height:300px;
+    min-width: 300px;
     background: gray;
+    margin: 15px;
 }
 
 .episode{
